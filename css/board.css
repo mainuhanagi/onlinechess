@@ -1,0 +1,343 @@
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+*/
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  font-family: tahoma , 'Ubuntu', sans-serif;
+  display:flex;
+  margin:0px;
+  padding:0px;
+  color:#808386;
+}
+
+.board-body {
+  width: 100%;
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+  display:flex;
+  overflow:auto;
+}
+
+.details-col {
+  /*background: #fff4ad;*/
+background: #ada99600;  /* fallback for old browsers */
+
+  display: inline-block;
+  width:50%;
+  box-sizing: border-box;
+  margin: 0px;
+  height: 100vh;
+}
+
+.board-col {
+  background: #010c0e;
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0px;
+  color:white;
+}
+
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: red;
+}
+
+.menu.hide {
+  left:-100%;
+}
+
+/*
+players controls 
+*/
+.player {
+  /*height:80px;*/
+  margin:1%;
+  padding: 1%;
+  width:96%;
+  background: #eef2f5;
+  /*box-shadow:0px 0px 0px 0px #f9f7f70f;*/
+  border:1px solid #ffffff1a;
+  border-radius:5px;
+
+}
+.player #name {
+  color: #909192;
+  font:bold 110% 'Ubuntu' , sans-serif;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.prof {
+  display:block;
+}
+
+.prof .icon {
+  display:inline-block;
+  background-image: url('../img/user1.png') !important;
+  background-size:cover;
+  width:30px;
+  height:30px;
+}
+.prof #name {
+  display:inline-block;
+  position:relative;
+  top:-10px;
+}
+
+.player .out-list {
+display:block;    
+}
+.player .out-list .out-item {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #fcfeff00;
+  border:0px solid ;
+}
+.controls {
+  margin-top: 2%;
+  margin:1%;
+  width:98%;
+  background:#ffffff05;
+  display:flex;
+  border:0px solid #f5f4f4;
+}
+.control {
+  margin:1%;
+  display:block;
+  background:#5ea1ef;
+  color:white;
+  padding:1.5%;
+  padding-left:4%;
+  padding-right:4%;
+  text-align:center;
+  /*box-shadow: 0px 0px 3px 1px #e4e4e4;*/
+  /*box-sizing:border-box;*/
+  border-radius:4px;
+  font:normal 100% consolas;
+  cursor: pointer;
+}
+.control#giveup{
+  background: #ffb347;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.control:hover {
+  background: #f9fafb;
+  color:#270442;
+  border-radius:2px;
+}
+.control.hide {
+  display: none;
+}
+
+.board {
+display:grid;
+grid-template-columns: repeat(8,1fr) ;
+height: 100%;
+width: 100%;
+background: gold;
+}
+
+.block{
+  background:red;
+  border: 0px solid ;
+}
+.block.block1 {
+background-color:#274a3f;
+}
+
+.block.block2 {
+background-color:aliceblue;
+}
+.chat-window {
+  margin-left:.5%;
+  position: absolute;
+  top: 50%;
+  width: 48%;
+  height:48%;
+  background:#e1e8e8;
+  border-radius:5px;
+  box-sizing:border-box;
+}
+.chats{
+  margin:1%;
+  box-sizing:border-box;
+  padding:1%;
+  position:absolute;
+  top:1%;
+  width:98%;
+  background:#d3dad9;
+  overflow:auto;
+  border-radius:5px;
+  min-height:75%;
+  max-height:78%;
+}
+.chat {
+  margin: 1%;
+  padding:1%;
+  padding-left:1%;
+  padding-right:1%;
+  border-radius:5px;
+  font:normal 90% 'Ubuntu' , Sans-serif ;
+}
+.chat.from {
+  float:right;
+  background:#7dff7a;
+  color:#292902;
+}
+.chat.to {
+  float:left;
+  background:white;
+  color:#010d17;
+}
+
+.chat-box {
+  box-sizing:border-box;
+  padding:1%;
+  position:absolute;
+  bottom:0%;
+  width:100%;
+}
+
+.chat-window .chat-box .btn {
+background:#7da3f1;
+border:2px solid #7da3f1;
+padding:1%;
+width: 13%;
+color:white;
+font:normal 95% 'Ubuntu' , sans-serif;
+}
+
+.chat-window .chat-box .input {
+background:white;
+border:2px solid #b0cce4;
+box-sizing:border-box;
+padding:1%;
+color:rgb(46, 45, 45);
+font:normal 90% consolas , 'Segoe UI';
+width:85%;
+margin-left:0%;
+border-radius:4px;
+}
+/*background css*/
+.rook1 {
+background-image: url('../img/icons/rook1.png');
+background-size: cover;
+}
+.rook2 {
+background-image: url('../img/icons/rook2.png');
+background-size: cover;
+}
+
+.knight1 {
+background-image: url('../img/icons/knight1.png');
+background-size: cover;
+}
+.knight2 {
+background-image: url('../img/icons/knight2.png');
+background-size: cover;
+}
+
+.bishop1 {
+background-image: url('../img/icons/bishop1.png');
+background-size: cover;
+}
+.bishop2 {
+background-image: url('../img/icons/bishop2.png');
+background-size: cover;
+}
+.queen1 {
+background-image: url('../img/icons/queen1.png');
+background-size: cover;
+}
+.queen2 {
+background-image: url('../img/icons/queen2.png');
+background-size: cover;
+}
+.king1 {
+background-image: url('../img/icons/king1.png');
+background-size: cover;
+}
+.king2 {
+background-image: url('../img/icons/king2.png');
+background-size: cover;
+}
+.pawn1 {
+background-image: url('../img/icons/pawn1.png');
+background-size: cover;
+}
+.pawn2 {
+background-image: url('../img/icons/pawn2.png');
+background-size: cover;
+}
+
+.block{
+  text-align: center;
+}
+.block .piece {
+width:90%;
+height:88%;
+margin:5%;
+box-sizing:border-box;
+background-repeat:no-repeat;
+background-size:contain;
+  display: inline-block;
+}
+.piece.active{
+  border-radius: 100px;
+  border:4px solid #ffbd45;
+  box-sizing:border-box;
+  margin: 5%;
+}
+.piece.active-posib{
+  border-radius: 100px;
+  border:4px solid #19bd90;
+  box-sizing:border-box;
+  margin: 5%;
+}
+
+
+.btn {
+  border-radius: 03px;
+}
+
+.btn:hover{
+  background: aliceblue !important;;
+  color: #77befb !important;
+  border:1px solid #a2d2f1 !important;
+}
+
+.swal2-popup ,.swal2-actions button {
+  font-family: 'Ubuntu' !important;
+}
+
+.undo {
+  width:40px;
+}
+
+/*  
+
+rgba(255, 94, 0, 1)
+#2EDA25
+
+red
+#ff5e00
+green
+#2adb20
+
+*/

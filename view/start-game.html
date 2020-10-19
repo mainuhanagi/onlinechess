@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/ui.css">
+        <link rel="stylesheet" href="../css/sweetalert2.css">
+        
+        <title> Chesss | New </title>
+    </head>
+    <body>
+        <% include menu.html %>
+        <div class="body">
+            <div class="start-game card">
+                <div class="title">
+                    <label> Send Invitation of Game </label>
+                </div>
+                <label> First </label> <br/>
+                <input type="text" name="self" class="txt disabled" /> <br/>
+                <label> Second<br/>
+                </label> <input type="text" name="opponant" class="txt" /> <br/>
+                <button class="btn disabled" onclick="sendRequest()" name="send" id="send" > Send Request </button> 
+                <div class="status">
+                    
+                    <div class="spinner hide">  
+                        <!-- spinner #3 effect -->
+                        <div class="spinner-eff spinner-eff-3">
+                            <div class="circle circle-1"></div>
+                            <div class="circle circle-2"></div>
+                            <div class="circle circle-3"></div>
+                        </div>    
+                    </div>
+                    <label class="msg" > </label>
+                    <div class="open-btn"> </div>
+                </div>  
+            </div>         
+        </div>
+        
+        <script type="text/javascript" src="../js/sweetalert2.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/start-game.js"></script>
+        
+    </body>
+</html>

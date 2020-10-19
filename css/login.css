@@ -1,0 +1,21 @@
+.login {
+    width:50%;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.login button{
+    padding:2% 8% 2% 8% !important;
+}
+.login .title {
+    color:#3699ff;
+}
+.login .card-body {
+
+}
+.card .title {
+    font:bold 110% 'Ubuntu';
+    color:#00BCD4;
+}

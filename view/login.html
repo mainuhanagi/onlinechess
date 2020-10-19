@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title> OnlChess | Login </title>
+    <link rel="stylesheet" href="../css/ui.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body class="body">
+
+    <% include menu.html %>
+        <div class="body">
+            <div name="login" class="card login form">
+                <div class="title"> Welcome to ChessMania </div>
+                <div class="card-body">
+                    <lable> Enter username to start<span>(eg. ak@1)</span> </lable> <br/>
+                    <input type="text" name="username" id="username" class="txt" onkeypress="checkEnter(event)" /> <br/>
+                    <button class="btn" value="Start" onclick="login()"> Start </button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/login.js"></script>
+        <script type="text/javascript" src="../js/sweetalert2.js"></script>
+</body>
+
+</html>

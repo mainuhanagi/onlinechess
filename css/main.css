@@ -1,0 +1,26 @@
+.chess-info {}
+
+.chess-steps img {
+    width: 500px;
+    height: 500px;
+}
+
+.chess-screens img {
+    width: 760px;
+    height: 500px;
+}
+
+#start-new{
+font:normal 100% 'Ubuntu';
+}
+
+#how-to-start{
+    background:#0000;
+    color:#4ebb17;
+    border:2px solid #6fd63a;
+    font:bold 90% 'Ubuntu';
+}
+
+.open-btn{
+    margin-top:1%;
+}

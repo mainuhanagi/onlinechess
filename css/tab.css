@@ -1,0 +1,46 @@
+.tabs-headers {
+  display:table;
+  box-sizing:border-box;
+  background-color:#defdda;
+  border-radius:200px;
+}
+.tab-header {
+  display:table-cell;
+  box-sizing: border-box;
+  border-radius:200px;
+  padding:4%;
+  font:bold 100% 'Ubuntu' , 'calibri';
+  width:fit-content;
+  width:200px;
+  color:#068692;
+  letter-spacing:.5px;
+}
+.tab-header.active {
+  background-color:#02ff8f;
+  color:#525653;
+  transition:all ease-in 100ms;
+}
+
+.tabs {
+  font:normal 100% 'Ubuntu' , 'Calibri';
+  padding: 1%;
+  padding-bottom:2px;
+  background-color:#f2f7f000;
+  border-radius:10px; 
+}
+.tabs-bodies {
+  margin-top:.5%;
+  margin-left:0%;
+  padding:1%;
+  background-color:#d6ebfd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tab-body {
+  display: none;
+  overflow: auto;
+}
+.tab-body.active{
+  display: block !important;;
+}

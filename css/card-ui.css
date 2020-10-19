@@ -1,0 +1,133 @@
+#popup-card{
+    background:#fdfeff;
+    padding:1%;
+    width:fit-content !important;
+    height:fit-content;
+    border-radius:10px;
+    font:normal 100% 'Calibri' ,'Segoe UI' , sans-serif;
+    box-shadow:0px 0px 2px 2px #c8deff;
+    border:1px solid #a6caff;
+}
+
+.center{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+#popup-card.tip .close-btn{
+    float:right;
+    width:fit-content;
+    height:fit-content;
+    background:#06182800;
+    padding:2px;
+    padding-left:1%;
+    padding-right:1%;
+    margin-right:0%;
+    font:bold 100% 'Segoe UI';
+    color:#1a81db;
+    border-radius:50px;
+}
+#popup-card.tip .close-btn:hover{
+    background:#061828;
+}
+
+#popup-card.tip .close-btn:before{
+    content:'X'
+}
+
+#popup-card.tip .head{
+    marging:0px;
+    background:#ff000000;
+    width:100%;
+    height:fit-content;
+    padding:2px;
+    margin-bottom:5px;
+    font-size:90%;
+    padding-left:1%;
+    color:#16bfe5;
+    font:bold 90% 'Calibri';
+}
+
+#popup-card.tip .body{
+    margin-top:2%;
+    margin-left:2%;
+    color:#6a6d70;
+}
+#popup-card.tip .body img{
+    margin-top:1%;
+    margin-left:4%;
+    border-radius:2px;
+    box-shadow:0px 0px 2px 2px #f0f5f9;
+}
+
+#popup-card.tip .footer{
+    margin-top:2%;
+}
+#popup-card.tip .footer button {
+    background:#0999ff;
+    border:1px solid #a0d3ff;
+    border-radius:5px;
+    padding:1% 2% 1% 2%;
+    box-shadow:0px 0px 2px 2px #79bcf6;
+    font:bold 95% 'Calibri';
+    color:#fefefe;
+}
+
+#popup-card.tip .footer button:hover{
+    background:#f0f8ff08;
+    color:#03A9F4;
+}
+#popup-card.tip .footer button.right{
+    float:right;
+    margin-right:5%;
+}
+#popup-card.tip .footer button.transparent{
+    background:#00000000;
+    color:#0999ff;
+}
+
+#popup-card.tip .footer button.dark{
+    background:#170101;
+    color:#feffff;
+}
+#popup-card.tip .footer button.dark:hover{
+    background:#feffff;
+    color:#0999ff;
+}
+
+
+/*green theme*/
+#popup-card.green{
+    box-shadow:0px 0px 2px 2px #a5fd9f;
+    border:1px solid #b0ffbd;
+}
+#popup-card.tip.green .head{
+    color:#054614;
+}
+#popup-card.tip.green .card-body{
+    color:#06420c;
+}
+#popup-card.tip.green button{
+    background:#05b10d;
+    color:#e7f6e7;
+    border:1px solid #b2f3bd;
+    box-shadow:0px 0px 2px 2px #79f67d;
+}
+
+#popup-card.tip.green .footer button.transparent{
+    background:#01100300;
+    color:#40da40;
+    border:1px solid #43e65e;
+    box-shadow:0px 0px 2px 2px #5cf160;
+}
+#popup-card.tip.green .footer button.dark{
+    background:#011003fa;
+    color:#f8faf8;
+    border:1px solid #43e65e;
+    box-shadow:0px 0px 2px 2px #5cf160;
+}
+#popup-card.tip.green .close-btn{
+    color:#60d160;
+}

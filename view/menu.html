@@ -1,0 +1,64 @@
+<!-- <html>
+<head>
+    <link rel="stylesheet" href="../css/ui.css" />
+</head>
+<body>
+-->
+<script type="text/javascript" src="../js/axios.min.js"></script>
+    <div id="header" >
+        <div id="title">
+            <label class="title"> ChessMania <span> | Ready to play with brain... </span> </label>    
+        </div>
+        <div class="user-nav">
+           <div class="help" onclick='document.location="/help"'> </div>
+        </div>
+    </div>
+    <div id="footer">
+      <label class="note-3"> <span class="blue"> created with </span> <span class="love-icon"></span> <span class="blue"> by <i> <span class="orange"> @Khwajamainuddin Hanagi </span>[<span class="blue"> https://github.com/mainuhanagi</span>] </i> </label>
+	</div>
+    <div id="sidebar" class='active-menu' >
+        <div class="prof" ></div>
+        <div class="prof-username"><label id="prof-username"></label></div>
+        <div class="menus">
+            <div class="menu" url="/home" >
+                <div class="menu-icon home"></div><label>Home</label>
+            </div>  
+            <div class="menu" url="/about">
+                <div class="menu-icon about"></div><label>About</label>
+            </div>  
+            <div class="menu logout" url="/logout">
+                <div class="menu-icon logout "></div>
+                <label>LogOut</label>
+            </div> 
+        </div>
+    </div>
+    
+    <script>
+        window._$ = (s) => {
+            return document.querySelector(s);
+        };
+        window.$$ = (s) => {
+            return document.querySelectorAll(s);
+        };
+        
+        axios.get('/username').then((res)=>{
+            let username = res.data;
+            console.log('name:'+username);
+            if(username==null || username==undefined||username=='')
+                _$('.menu.logout').classList.add('hide');
+            else
+                _$('#prof-username').innerHTML = username;
+
+        });
+        var links = $$('.menu');
+        for(let i=0;i<links.length;i++) {
+            links[i].onclick = () => {
+                console.log(links);
+                document.location = links[i].getAttribute('url'); 
+            }            
+        }
+
+    </script>
+
+<!-- </body>
+</html> -->
